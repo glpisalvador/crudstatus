@@ -1,0 +1,121 @@
+/* Plugin CRUD Status - visual próximo ao nativo, poucas cores e tons suaves */
+
+.crudstatus-pagina { max-width: 1280px; margin: 0 auto; padding: 4px 8px 20px; font-size: 13px; color: #333; }
+.crudstatus-pagina code { font-size: 11px; color: #495057; background: #f8f9fa; padding: 1px 5px; border-radius: 3px; }
+
+.crudstatus-nav { margin-bottom: 12px; border-bottom: 1px solid #dee2e6; }
+.crudstatus-nav .nav-link { font-size: 13px; color: #6c757d; padding: 6px 12px; display: inline-flex; align-items: center; gap: 6px; }
+.crudstatus-nav .nav-link:hover { background: #fff3cd; color: #333; }
+.crudstatus-nav .nav-link.active { font-weight: 600; color: #333; border-bottom-color: transparent; }
+
+.crudstatus-tipos { gap: 6px; margin-bottom: 12px; }
+.crudstatus-tipos .nav-link { font-size: 12px; padding: 5px 12px; color: #495057; display: inline-flex; align-items: center; gap: 6px; border-radius: 4px; }
+.crudstatus-tipos .nav-link:hover { background: #fff3cd; }
+.crudstatus-tipos .nav-link.active { background: #ffc107; color: #333; font-weight: 600; }
+
+.crudstatus-card { border: 1px solid #dee2e6; box-shadow: none; margin-bottom: 12px; overflow: visible; }
+.crudstatus-card .card-header { background: #f8f9fa; padding: 10px 15px; border-bottom: 1px solid #dee2e6; }
+.crudstatus-card .card-header h5 { font-size: 14px; font-weight: 600; color: #495057; margin: 0; display: flex; align-items: center; gap: 8px; }
+.crudstatus-card .card-body { padding: 12px 15px; overflow: visible; }
+.crudstatus-cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.crudstatus-contador { font-size: 10px; font-weight: 600; color: #6c757d; background: #e9ecef; border-radius: 10px; padding: 1px 7px; }
+
+.crudstatus-tabela { font-size: 12px; margin: 0; }
+.crudstatus-tabela thead th { background: #f8f9fa; font-size: 11px; font-weight: 600; text-transform: uppercase; color: #6c757d; padding: 8px 10px; border-bottom: 1px solid #dee2e6; white-space: nowrap; }
+.crudstatus-tabela td { padding: 7px 10px; vertical-align: middle; }
+.crudstatus-col-ordem { width: 70px; }
+.crudstatus-indisponivel td { background: #f0f0f0; }
+.crudstatus-indisponivel .crudstatus-status strong { color: #999; }
+
+.crudstatus-status { display: inline-flex; align-items: center; gap: 6px; }
+.crudstatus-status i { font-size: 15px; }
+.crudstatus-padrao { display: block; font-size: 10px; color: #999; margin-left: 21px; }
+.crudstatus-fraco { color: #999; }
+.crudstatus-ok { color: #198754; }
+.crudstatus-erro { color: #b02a37; }
+
+.crudstatus-pill { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; white-space: nowrap; border: 1px solid transparent; }
+.crudstatus-pill-ok { background: rgba(25, 135, 84, 0.08); color: #198754; border-color: rgba(25, 135, 84, 0.25); }
+.crudstatus-pill-erro { background: rgba(220, 53, 69, 0.08); color: #b02a37; border-color: rgba(220, 53, 69, 0.25); }
+.crudstatus-pill-aviso { background: rgba(255, 193, 7, 0.12); color: #664d03; border-color: rgba(255, 193, 7, 0.35); }
+.crudstatus-pill-neutro { background: rgba(108, 117, 125, 0.08); color: #41464b; border-color: rgba(108, 117, 125, 0.25); }
+.crudstatus-pill-primario { background: rgba(13, 110, 253, 0.08); color: #0a58ca; border-color: rgba(13, 110, 253, 0.25); }
+.crudstatus-pill-alterado { background: rgba(13, 202, 240, 0.1); color: #055160; border-color: rgba(13, 202, 240, 0.3); }
+.crudstatus-cat-novo { background: rgba(25, 135, 84, 0.08); color: #198754; }
+.crudstatus-cat-andamento { background: rgba(13, 110, 253, 0.08); color: #0a58ca; }
+.crudstatus-cat-pendente { background: rgba(255, 193, 7, 0.12); color: #664d03; }
+.crudstatus-cat-solucionado { background: rgba(108, 117, 125, 0.1); color: #41464b; }
+.crudstatus-cat-fechado { background: rgba(33, 37, 41, 0.08); color: #212529; }
+
+.crudstatus-botoes { display: inline-flex; gap: 4px; flex-wrap: wrap; align-items: center; }
+.crudstatus-pagina .btn-sm, .crudstatus-form .btn-sm, #crudstatus-modal .btn-sm, #crudstatus-modal-excluir .btn-sm { padding: 3px 10px; font-size: 11px; border-radius: 3px; display: inline-flex; align-items: center; gap: 4px; }
+.crudstatus-btn-icone { padding: 2px 6px !important; }
+.crudstatus-btn-principal { background: #e5a54b; border-color: #e5a54b; color: #fff; }
+.crudstatus-btn-principal:hover, .crudstatus-btn-principal:focus { background: #d8953a; border-color: #d8953a; color: #fff; }
+.crudstatus-confirmando { background: rgba(220, 53, 69, 0.1) !important; border-color: rgba(220, 53, 69, 0.5) !important; color: #842029 !important; }
+.crudstatus-retorno { font-size: 12px; margin-right: auto; }
+.crudstatus-retorno.ok { color: #198754; }
+.crudstatus-retorno.erro { color: #b02a37; }
+.crudstatus-acoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.crudstatus-acoes .crudstatus-retorno { margin-right: 0; }
+
+.crudstatus-pagina .form-check-input:checked, #crudstatus-modal .form-check-input:checked { background-color: #f0c946; border-color: #e0b830; }
+.crudstatus-pagina .form-check-input:focus, #crudstatus-modal .form-check-input:focus { box-shadow: 0 0 0 0.2rem rgba(240, 201, 70, 0.25); border-color: #e0b830; }
+.crudstatus-switch { margin: 0; padding-left: 3em; }
+.crudstatus-switch .form-check-input { width: 2.5em; height: 1.3em; margin-left: -3em; cursor: pointer; }
+.crudstatus-switch .form-check-label { font-size: 13px; font-weight: 600; cursor: pointer; }
+.crudstatus-switch-tabela { display: inline-block; margin: 0; padding-left: 0; min-height: 0; }
+.crudstatus-switch-tabela .form-check-input { width: 2.2em; height: 1.15em; margin: 0; float: none; cursor: pointer; }
+
+.crudstatus-alerta { display: flex; align-items: flex-start; gap: 10px; padding: 8px 12px; border: 1px solid; border-radius: 4px; margin: 0 0 12px; font-size: 12px; }
+.crudstatus-alerta > i { font-size: 16px; line-height: 1.2; }
+.crudstatus-alerta .btn { margin-left: auto; }
+.crudstatus-alerta-aviso { background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); color: #664d03; }
+.crudstatus-alerta-info { background: rgba(13, 202, 240, 0.1); border-color: rgba(13, 202, 240, 0.3); color: #055160; }
+
+.crudstatus-dica { font-size: 12px; margin: 0 0 8px; line-height: 1.5; }
+.crudstatus-dica > i:first-child { margin-right: 4px; }
+.crudstatus-dica-inline { font-size: 11px; }
+.crudstatus-dicas { margin-top: 4px; }
+.crudstatus-vazio { padding: 16px; margin: 0; text-align: center; font-size: 12px; }
+
+.crudstatus-dados { width: 100%; border-collapse: collapse; margin-bottom: 4px; }
+.crudstatus-dados th { width: 170px; font-weight: 600; color: #6c757d; font-size: 12px; padding: 5px 10px 5px 0; vertical-align: top; }
+.crudstatus-dados td { padding: 5px 0; font-size: 12px; border-bottom: 1px solid #f0f0f0; }
+.crudstatus-metodos { display: flex; flex-wrap: wrap; gap: 4px; }
+.crudstatus-registro { list-style: none; margin: 0; padding: 6px 15px; font-size: 11px; color: #495057; max-height: 260px; overflow: auto; }
+.crudstatus-registro li { padding: 3px 0; border-bottom: 1px solid #f0f0f0; }
+
+/* Formulário (modal) */
+.crudstatus-form { font-size: 13px; }
+.crudstatus-linha { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 10px; }
+.crudstatus-linha-topo { align-items: flex-start; }
+.crudstatus-rotulo { width: 120px; font-weight: 600; font-size: 12px; color: #495057; margin: 0; }
+.crudstatus-rotulo-curto { font-weight: 600; font-size: 12px; color: #495057; margin: 0; }
+.crudstatus-linha .form-control, .crudstatus-linha .form-select { font-size: 12px; flex: 1 1 220px; }
+.crudstatus-linha .crudstatus-campo-curto { flex: 0 0 110px; }
+.crudstatus-linha .crudstatus-campo-medio { flex: 0 1 240px; }
+.crudstatus-linha .form-control-color { flex: 0 0 42px; height: 30px; padding: 2px; }
+.crudstatus-previa { display: flex; align-items: center; gap: 14px; padding: 8px 12px; margin-bottom: 12px; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 4px; }
+.crudstatus-previa > span:first-child { font-size: 10px; font-weight: 600; text-transform: uppercase; color: #6c757d; }
+.crudstatus-previa i { font-size: 18px; }
+.crudstatus-cores { display: inline-flex; gap: 4px; flex-wrap: wrap; }
+.crudstatus-cor { width: 18px; height: 18px; border-radius: 3px; border: 1px solid rgba(0, 0, 0, 0.15); padding: 0; cursor: pointer; }
+.crudstatus-cor:hover { box-shadow: 0 0 0 2px rgba(240, 201, 70, 0.6); }
+.crudstatus-icones { flex: 1 1 420px; min-width: 0; }
+.crudstatus-icones-topo { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.crudstatus-icones-topo .form-control { max-width: 350px; font-size: 12px; }
+.crudstatus-icone-atual { font-size: 11px; color: #6c757d; white-space: nowrap; }
+.crudstatus-grade-icones { display: grid; grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); gap: 4px; max-height: 190px; overflow-y: auto; border: 1px solid #dee2e6; border-radius: 4px; padding: 6px; }
+.crudstatus-grade-icones button { height: 32px; border: 1px solid transparent; background: #fff; border-radius: 3px; font-size: 17px; color: #495057; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.crudstatus-grade-icones button:hover { background: #f8f9fa; border-color: #e0e0e0; }
+.crudstatus-grade-icones button.selecionado { background: #e8f4fc; border-color: #007bff; }
+.crudstatus-icones-total { font-size: 11px; color: #999; margin-top: 4px; }
+.crudstatus-modal-perigo { background: rgba(220, 53, 69, 0.08); }
+.crudstatus-modal-perigo .modal-title { font-size: 14px; color: #842029; display: flex; gap: 6px; align-items: center; }
+#crudstatus-modal .modal-title { font-size: 14px; font-weight: 600; }
+.crudstatus-desativado { opacity: 0.55; pointer-events: none; }
+
+@media (max-width: 760px) {
+    .crudstatus-rotulo { width: 100%; }
+}
